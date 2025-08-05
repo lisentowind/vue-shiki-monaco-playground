@@ -26,7 +26,7 @@ jobs:
       - name: Upload static site files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.' # 因为你的静态网站文件就在仓库根目录
+          path: './storybook-static' # 静态网站文件就在仓库根目录
 
       - name: Deploy to GitHub Pages
         id: deployment
